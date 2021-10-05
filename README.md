@@ -3,7 +3,7 @@
 
 
 ## 1. First install all requeriments from requirements.txt with the command:
-## pip install -r requeriments.txt
+<p> pip install -r requeriments.txt </p>
 
 
 
