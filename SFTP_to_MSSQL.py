@@ -38,11 +38,17 @@ def getCredentials(transport):
 
 
 if __name__=='__main__':
+    #Extract part
     #Connect to SFTP
     paramiko.util.log_to_file("paramiko.log")
     # Open Connection
     transport = getTransport()
     # Connect to sftp with credentials
     sftp = getCredentials(transport)
+    #Transformation part
+    #We extract this from a SFTP but in this project we'll use an example xlsx file.
+    df = pd.read_excel('datasets/templateCoto.xlsx', engine = 'openpyxl')
+    
+
 
 
